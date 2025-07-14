@@ -1,0 +1,23 @@
+.app {
+  background: linear-gradient(to bottom, #102c12, black);
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #00ff15;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #07711a;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+
+

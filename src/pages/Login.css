@@ -1,0 +1,147 @@
+.login-page {
+  height: 100dvh;
+  width: 100%;
+  background: url('../assets/6417743.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.login-form-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form input {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.login-form input:hover {
+  border: 1px solid #00aaff99;
+  background-color: #141414; 
+  box-shadow:
+    0 0 6px #00ffff33; 
+  transition: all 0.25s ease;
+}
+
+.login-form input:focus {
+  border: 1px solid #00aaffaa;
+  background-color: #111;
+  outline: none;
+  box-shadow:
+    0 0 6px #00aaff88,         
+    0 0 12px #00ffff44,        
+    inset 0 0 3px #00ffff22;   
+  transition: all 0.25s ease;
+}
+
+.login-form input::placeholder {
+  color: #888888;
+}
+
+.login-form button {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #00cccc;
+}
+
+.switch-mode {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.switch-mode span {
+  margin-left: 0.4rem;
+  color: #00ffff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.935rem;
+  color: #00ffff88;
+  font-size: 1rem;
+}
+
+.eye-toggle {
+  position: absolute;
+  right: 0.8rem;
+  color: #00ffff88;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.captcha-box {
+  position: absolute;
+  right: 0.6rem;
+  background-color: #222;
+  color: #00ffff;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  font-size: 0.85rem;
+  color: #00ffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.forgot-password a {
+  color: #00ff15;
+}

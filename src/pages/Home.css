@@ -1,0 +1,120 @@
+.home-page {
+  width: 100%;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a, #0f0f0f);
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  font-family: 'Orbitron', sans-serif;
+  mix-blend-mode: screen;
+
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  
+  text-shadow: 0 0 10px #00ffffaa;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffffaa;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00ffff, #ccff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #cccccc;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  background: #00ffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ffff55;
+  z-index: 10;
+  position: relative;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+.features-section {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #111;
+}
+
+.feature-card {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffff22;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffff11;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ffff33;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #000;
+}
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #00ffff;
+}
+
+.glow {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff66, 0 0 25px #00ffff44;
+}
+
+.glow:hover {
+  background: #00cccc;
+}
