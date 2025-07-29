@@ -117,4 +117,9 @@
 
 .glow:hover {
   background: #00cccc;
+  transform: scale(1.05);
+}
+
+a.cta-button {
+  display: inline-block;
 }

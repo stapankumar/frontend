@@ -9,6 +9,7 @@ import DashboardLayout from './pages/Dashboard/DashboardLayout';
 import Market from './pages/Dashboard/Market';
 import Portfolio from './pages/Dashboard/Portfolio';
 import Futures from './pages/Dashboard/Futures';
+import Summary from './pages/Summary'; 
 
 import './App.css'; 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="futures" element={<Futures />} />
           </Route>
+          <Route path="/summary" element={<Summary />} />
         </Routes>
       </main>
       <Footer />

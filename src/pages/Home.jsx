@@ -1,4 +1,6 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
+
 import { FaChartLine, FaLock, FaRocket } from 'react-icons/fa';
 
 import { Parallax } from 'react-parallax';
@@ -13,7 +15,7 @@ const Home = () => {
               Welcome to <span className="highlight">Trading Dashboard</span>
           </h1>
           <p className="tagline">Smarter trading starts here.</p>
-          <a href="/login" className="cta-button">Get Started</a>
+          <Link to="/login" className="cta-button">Get Started</Link>
         </div>
       </Parallax>
 
@@ -37,7 +39,7 @@ const Home = () => {
 
       <section className="cta-section">
         <h2>Ready to explore your trading journey?</h2>
-        <a href="/dashboard" className="cta-button glow">Explore Dashboard</a>
+        <Link to="/dashboard" className="cta-button">Explore Dashboard</Link>
       </section>
     </div>
   );
