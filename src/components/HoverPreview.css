@@ -1,0 +1,116 @@
+.hover-preview-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-popup {
+  position: absolute;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  width: 320px;
+  max-width: 95vw;
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.75); 
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+  backdrop-filter: blur(8px); 
+  overflow: hidden;
+}
+
+.hover-preview-wrapper:hover .hover-popup {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.hover-popup-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.hover-popup h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #00ffe0;
+  animation: slideIn 0.5s ease-out forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.hover-popup p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #b8ffff;
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.hover-preview-content {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.preview-cta {
+  background: #00ffff33;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preview-cta:hover {
+  background: #00ffff66;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.hover-popup::after {
+  content: "";
+  position: absolute;
+  top: -70%;
+  left: -50%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(0,255,255,0.2), transparent 90%);
+  animation: moveGlow 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,5 +1,8 @@
 import './Summary.css';
-import { FaArrowUp, FaArrowDown, FaChartLine, FaFire, FaNewspaper } from 'react-icons/fa';
+import { TbWorldDollar } from "react-icons/tb";
+import { HiNewspaper } from "react-icons/hi2";
+import { RiBitCoinLine } from "react-icons/ri";
+import { MdOutlineTrendingUp, MdOutlineTrendingDown } from "react-icons/md";
 
 const PlaceholderCard = ({ icon, title }) => (
   <div className="card loading">
@@ -11,49 +14,51 @@ const PlaceholderCard = ({ icon, title }) => (
 );
 
 const Summary = () => {
+
   return (
     <div className="summary-page">
       <section className="summary-section">
-        <h2><FaChartLine /> Global Indices</h2>
+        <h2><TbWorldDollar /> Global Indices</h2>
         <div className="card-grid">
-          <PlaceholderCard icon={<FaChartLine />} title="Index" />
-          <PlaceholderCard icon={<FaChartLine />} title="Index" />
-          <PlaceholderCard icon={<FaChartLine />} title="Index" />
+          <PlaceholderCard icon={<TbWorldDollar />} title="Index" />
+          <PlaceholderCard icon={<TbWorldDollar />} title="Index" />
+          <PlaceholderCard icon={<TbWorldDollar />} title="Index" />
         </div>
       </section>
 
       <section className="summary-section">
-        <h2><FaArrowUp /> Top Gainers</h2>
+        <h2><MdOutlineTrendingUp /> Top Gainers</h2>
         <div className="card-grid">
-          <PlaceholderCard icon={<FaArrowUp />} title="Coin" />
-          <PlaceholderCard icon={<FaArrowUp />} title="Coin" />
-          <PlaceholderCard icon={<FaArrowUp />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingUp />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingUp />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingUp />} title="Coin" />
         </div>
       </section>
 
       <section className="summary-section">
-        <h2><FaArrowDown /> Top Losers</h2>
+        <h2><MdOutlineTrendingDown /> Top Losers</h2>
         <div className="card-grid">
-          <PlaceholderCard icon={<FaArrowDown />} title="Coin" />
-          <PlaceholderCard icon={<FaArrowDown />} title="Coin" />
-          <PlaceholderCard icon={<FaArrowDown />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingDown />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingDown />} title="Coin" />
+          <PlaceholderCard icon={<MdOutlineTrendingDown />} title="Coin" />
         </div>
       </section>
 
       <section className="summary-section">
-        <h2><FaFire /> Trending Coins / Stocks</h2>
+        <h2><RiBitCoinLine /> Trending Coins / Stocks</h2>
         <div className="card-grid">
-          <PlaceholderCard icon={<FaFire />} title="Coin" />
-          <PlaceholderCard icon={<FaFire />} title="Coin" />
-          <PlaceholderCard icon={<FaFire />} title="Coin" />
+          <PlaceholderCard icon={<RiBitCoinLine />} title="Coin" />
+          <PlaceholderCard icon={<RiBitCoinLine />} title="Coin" />
+          <PlaceholderCard icon={<RiBitCoinLine />} title="Coin" />
         </div>
       </section>
 
       <section className="summary-section">
-        <h2><FaNewspaper /> News & Updates</h2>
+        <h2><HiNewspaper /> News & Updates</h2>
         <div className="card-grid">
-          <PlaceholderCard icon={<FaNewspaper />} title="News" />
-          <PlaceholderCard icon={<FaNewspaper />} title="News" />
+          <PlaceholderCard icon={<HiNewspaper />} title="News" />
+          <PlaceholderCard icon={<HiNewspaper />} title="News" />
+          <PlaceholderCard icon={<HiNewspaper />} title="News" />
         </div>
       </section>
     </div>

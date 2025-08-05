@@ -1,0 +1,100 @@
+.dashboard-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  background-image: url('/assets/6417743.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #00ffff; 
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.dashboard-options {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 240px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #00ffff;
+  border: 1px solid #00ffcc20;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(0, 255, 204, 0.08); 
+  border-color: #00ffff;
+  box-shadow: 0 0 15px #00ff15;
+  transition: all 0.3s ease;
+  color: #00ff15; 
+}
+
+.dashboard-card::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #00ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.dashboard-card:hover::after {
+  opacity: 1;
+}
+
+.dashboard-subpage {
+  padding: 2rem;
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+
+
