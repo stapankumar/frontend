@@ -4,11 +4,6 @@ import './Portfolio.css';
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      <video autoPlay muted loop playsInline className="video-bg">
-        <source src="/videos/portfolio2_3840_2160_30fps.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
       <div className="portfolio-content">
         <h1>📈 Your Portfolio</h1>
         <p>Track holdings, profit/loss stats, and portfolio health here.</p>

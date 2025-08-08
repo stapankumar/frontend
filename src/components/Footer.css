@@ -1,36 +1,85 @@
 .footer {
   background-color: #0a0a0a;
   color: #00ffff;
-  padding: 0.5rem 1rem;
-  text-align: center;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1rem; 
+  padding: 3rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
+  justify-content: space-between;
+  min-height: 25vh; 
 }
 
-.github-link {
-  display: inline-flex;
-  align-items: center;
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
   color: #00ffff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.2s ease;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
-.github-link:hover {
-  color: #00cccc;
-}
-
-.github-icon {
-  margin-right: 1rem;
-  font-size: 1rem;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 1rem;
+.footer-brand p {
   color: #00dddd;
+  font-size: 0.9rem;
+}
+
+.footer-links h3, 
+.footer-social h3 {
+  color: #00ffff;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.footer-links a,
+.footer-links button {
+  background: none;
+  border: none;
+  color: #00dddd;
+  text-decoration: none;
+  font-size: 0.89rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-family: 'Orbitron', sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.footer-links a:hover,
+.footer-links button:hover {
+  color: #00cccc;
+  transform: translateX(4px);
+}
+
+.footer-social .social-icons a {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+  color: #00ffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #00cccc;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #00ffff;
+  font-size: 0.85rem;
+  color: #00dddd;
+  margin-top: 1.5rem;
+}
+
+.footer-bottom p{
+  color: #00ffff
 }

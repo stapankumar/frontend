@@ -19,7 +19,22 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  backdrop-filter: blur(8px);
+  transform: translateY(0);
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
+
+.login-form-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 0 25px rgba(0, 255, 255, 0.4),
+    0 0 50px rgba(0, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 
 .login-form-container h2 {
   text-align: center;

@@ -1,3 +1,12 @@
-export default function Market() {
-  return <div>Market Page</div>;
-}
+import React from "react";
+import "./Market.css";
+
+const Market = () => {
+  return (
+    <div className="market-container">
+      Market Page
+    </div>
+  );
+};
+
+export default Market;
